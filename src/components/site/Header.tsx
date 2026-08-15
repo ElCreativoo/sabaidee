@@ -78,10 +78,12 @@ export function Header() {
               </a>
             ))}
             <a
-              href={site.phoneHref}
-              className="mt-1 w-fit rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground"
+              href={site.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 w-fit rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground"
             >
-              {site.phone}
+              Via WhatsApp
             </a>
           </div>
         </div>
