@@ -6,8 +6,14 @@ export function Footer() {
     <footer className="mt-24 bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="font-serif text-2xl">Sabai Dee</p>
-          <p className="text-sm text-primary-foreground/70">Thaimassage · Münsingen</p>
+          <img
+            src={logoAsset.url}
+            alt={site.name}
+            className="h-16 w-auto sm:h-20"
+            loading="lazy"
+            decoding="async"
+          />
+          <p className="mt-4 text-sm text-primary-foreground/70">Thaimassage · Münsingen</p>
           <div className="mt-4 h-px w-12 bg-accent/70" />
           <p className="mt-4 text-sm text-primary-foreground/80">
             Traditionelle Thai-Massage in ruhiger Atmosphäre – individuell auf Sie abgestimmt.
