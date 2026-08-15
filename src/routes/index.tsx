@@ -278,13 +278,17 @@ function Home() {
         </div>
 
         <div className="mt-12 overflow-hidden rounded-3xl shadow-xl">
-          <img
-            src={images.reception}
-            alt="Wartebereich mit Sofa und Buddha-Figur im Studio Sabai Dee"
-            loading="lazy"
+          <video
+            src={contactVideo.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
             className="h-[360px] w-full object-cover"
           />
         </div>
+
       </section>
     </div>
   );
