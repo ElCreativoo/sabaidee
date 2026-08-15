@@ -230,8 +230,8 @@ function Home() {
             {/* Reihe 1 – Buddha mittig */}
             <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
               <img
-                src={images.entrance}
-                alt="Eingangsbereich mit goldener Buddha-Statue"
+                src={images.reception}
+                alt="Empfangs- und Wartebereich mit Sofa"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -241,13 +241,13 @@ function Home() {
                 src={images.buddha}
                 alt="Goldene Buddha-Statue mit Kerzenlicht im Studio"
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover object-[center_25%] transition-transform duration-500 group-hover:scale-105"
+                className="absolute inset-0 h-full w-full object-cover object-[center_10%] transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
               <img
-                src={images.reception}
-                alt="Empfangs- und Wartebereich mit Sofa"
+                src={images.entrance}
+                alt="Eingangsbereich mit goldener Buddha-Statue"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
