@@ -50,9 +50,13 @@ function Home() {
   return (
     <div>
       <section className="relative flex min-h-[78vh] items-center overflow-hidden">
-        <img
-          src={images.hero}
-          alt="Inhaberin von Sabai Dee Thaimassage begrüsst Gäste im Behandlungsraum"
+        <video
+          src={videoAsset.url}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/25" />
