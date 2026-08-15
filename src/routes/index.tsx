@@ -251,8 +251,16 @@ function Home() {
               />
             </div>
 
-            {/* Reihe 3 – zentriert unter der Mittelspalte */}
-            <div className="group relative col-span-2 aspect-[4/3] overflow-hidden rounded-2xl md:col-span-1 md:col-start-2">
+            {/* Reihe 3 – links, Mitte, rechts */}
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.footMassage}
+                alt="Fussmassage bei Kerzenlicht"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
               <img
                 src={images.hero}
                 alt="Inhaberin im Behandlungsraum von Sabai Dee"
@@ -260,6 +268,15 @@ function Home() {
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.backMassage}
+                alt="Rückenmassage im Studio Sabai Dee"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+
           </div>
         </div>
       </section>
