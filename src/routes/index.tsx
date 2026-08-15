@@ -104,8 +104,8 @@ function Home() {
           </div>
           <div className="overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={images.reception}
-              alt="Wartebereich mit Sofa und Buddha-Figur im Studio Sabai Dee"
+              src={images.hero}
+              alt="Inhaberin von Sabai Dee Thaimassage begrüsst Gäste im Behandlungsraum"
               className="h-full w-full object-cover"
               loading="lazy"
             />
