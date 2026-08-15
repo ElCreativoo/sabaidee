@@ -163,21 +163,49 @@ function Home() {
         </div>
       </section>
 
-      <section id="preise" className="mx-auto max-w-4xl scroll-mt-24 px-4 py-20 sm:px-6">
+      <section id="preise" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-20 sm:px-6">
         <div className="text-center">
           <h2 className="font-serif text-3xl text-primary sm:text-4xl">Preise</h2>
           <div className="mx-auto mt-4 h-px w-14 bg-accent" />
         </div>
-        <div className="mt-10 overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-border/60">
-          {prices.map((p) => (
-            <div
-              key={p.duration}
-              className="flex items-center justify-between border-b border-border/50 px-7 py-5 last:border-0"
-            >
-              <span className="text-base text-foreground">{p.duration}</span>
-              <span className="font-serif text-2xl text-primary">{p.price}</span>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-border/60">
+            <div className="border-b border-border/50 px-7 py-4">
+              <h3 className="font-serif text-xl text-primary">Preise</h3>
             </div>
-          ))}
+            {prices.map((p) => (
+              <div
+                key={p.duration}
+                className="flex items-center justify-between border-b border-border/50 px-7 py-5 last:border-0"
+              >
+                <span className="text-base text-foreground">{p.duration}</span>
+                <span className="font-serif text-2xl text-primary">{p.price}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-2xl bg-card p-7 shadow-sm ring-1 ring-border/60">
+            <h3 className="font-serif text-xl text-primary">Weitere Dienstleistungen</h3>
+            <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3">
+              {[
+                "Ayurvedische Massage",
+                "Chinesische Massage",
+                "Entspannende Massage",
+                "Fussmassage",
+                "Ganzkörpermassage",
+                "Heilmassage",
+                "Paarmassage",
+                "Schwedische Massage",
+                "Tiefengewebemassage",
+                "Therapeutische Massage",
+              ].map((service) => (
+                <div key={service} className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                  <span>{service}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         <p className="mt-6 text-center text-sm text-muted-foreground">
           Preise gelten für alle Behandlungsarten. Barzahlung vor Ort.
