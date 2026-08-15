@@ -246,8 +246,8 @@ function Home() {
             </div>
             <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
               <img
-                src={images.entrance}
-                alt="Eingangsbereich mit goldener Buddha-Statue"
+                src={images.lounge}
+                alt="Ruhebereich mit Vorhang und Sitzecke"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -272,8 +272,8 @@ function Home() {
             </div>
             <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
               <img
-                src={images.lounge}
-                alt="Ruhebereich mit Vorhang und Sitzecke"
+                src={images.entrance}
+                alt="Eingangsbereich mit goldener Buddha-Statue"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
