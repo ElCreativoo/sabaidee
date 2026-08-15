@@ -3,6 +3,7 @@ import entranceImg from "@/assets/image-2.png.asset.json";
 import loungeImg from "@/assets/image-3.png.asset.json";
 import roomImg from "@/assets/image-4.png.asset.json";
 import receptionImg from "@/assets/image-5.png.asset.json";
+import buddhaImg from "@/assets/buddha.jpg.asset.json";
 
 export const site = {
   name: "Sabai Dee Thaimassage",
