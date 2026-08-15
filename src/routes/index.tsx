@@ -270,10 +270,13 @@ function Home() {
         </div>
 
         <div className="mt-12 overflow-hidden rounded-3xl shadow-xl">
-          <img
-            src={images.entrance}
-            alt="Eingangsbereich von Sabai Dee Thaimassage mit Buddha-Statue"
-            loading="lazy"
+          <video
+            src={videoAsset.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
             className="h-[360px] w-full object-cover"
           />
         </div>
