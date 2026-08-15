@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { gallery, hours, images, prices, site, treatments } from "@/lib/site";
+import { hours, images, prices, site, treatments } from "@/lib/site";
 import heroVideo from "@/assets/user-hero-video.mp4.asset.json";
 import contactVideo from "@/assets/sabaidee-video.mp4.asset.json";
 
@@ -197,17 +197,68 @@ function Home() {
             <h2 className="font-serif text-3xl text-primary sm:text-4xl">Eindrücke</h2>
             <div className="mx-auto mt-4 h-px w-14 bg-accent" />
           </div>
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3">
-            {gallery.map((img) => (
-              <div key={img.src} className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            ))}
+          <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
+            {/* Reihe 1 – Buddha mittig */}
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.entrance}
+                alt="Eingangsbereich mit goldener Buddha-Statue"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.buddha}
+                alt="Goldene Buddha-Statue mit Kerzenlicht im Studio"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover object-[center_25%] transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.reception}
+                alt="Empfangs- und Wartebereich mit Sofa"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            {/* Reihe 2 – Kerzenbild mittig unter dem Buddha */}
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.room}
+                alt="Behandlungsraum mit traditioneller Thai-Matte"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.candles}
+                alt="Handtücher, Kerzen und Orchidee im Studio"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <img
+                src={images.lounge}
+                alt="Ruhebereich mit Vorhang und Sitzecke"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            {/* Reihe 3 – zentriert unter der Mittelspalte */}
+            <div className="group relative col-span-2 aspect-[4/3] overflow-hidden rounded-2xl md:col-span-1 md:col-start-2">
+              <img
+                src={images.hero}
+                alt="Inhaberin im Behandlungsraum von Sabai Dee"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </section>
