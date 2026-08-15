@@ -302,45 +302,16 @@ function Home() {
         </div>
       </section>
 
-      <section id="oeffnungszeiten" className="scroll-mt-24 bg-secondary py-20">
-        <div className="mx-auto max-w-2xl px-4 sm:px-6">
-          <div className="text-center">
-            <h2 className="font-serif text-3xl text-primary sm:text-4xl">Öffnungszeiten</h2>
-            <div className="mx-auto mt-4 h-px w-14 bg-accent" />
-          </div>
-          <div className="mt-10 rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
-            <h3 className="font-serif text-2xl text-primary">Unsere Öffnungszeiten</h3>
-            <ul className="mt-6 space-y-2.5 text-sm">
-              {hours.map((h) => (
-                <li
-                  key={h.day}
-                  className="flex justify-between border-b border-border/50 pb-2 last:border-0"
-                >
-                  <span className={h.closed ? "text-muted-foreground" : "text-foreground"}>
-                    {h.day}
-                  </span>
-                  <span
-                    className={h.closed ? "text-muted-foreground" : "font-medium text-foreground"}
-                  >
-                    {h.time}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <section id="kontakt" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-20 sm:px-6">
         <div className="text-center">
-          <h2 className="font-serif text-3xl text-primary sm:text-4xl">Kontakt</h2>
+          <h2 className="font-serif text-3xl text-primary sm:text-4xl">Kontakt & Öffnungszeiten</h2>
           <div className="mx-auto mt-4 h-px w-14 bg-accent" />
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
             Termine nach telefonischer Vereinbarung – gerne auch kurzfristig.
           </p>
         </div>
 
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex flex-col items-center gap-6">
           <div className="w-full max-w-xl rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
             <h3 className="font-serif text-2xl text-primary">So erreichen Sie uns</h3>
             <address className="mt-6 space-y-1 not-italic text-muted-foreground">
@@ -373,28 +344,49 @@ function Home() {
               </a>
             </div>
           </div>
-        </div>
 
-        <div className="mt-12 overflow-hidden rounded-3xl shadow-xl">
-          <video
-            src={contactVideo.url}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="h-[360px] w-full object-cover"
-          />
-        </div>
+          <div className="w-full max-w-xl rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
+            <h3 className="font-serif text-2xl text-primary">Öffnungszeiten</h3>
+            <ul className="mt-6 space-y-2.5 text-sm">
+              {hours.map((h) => (
+                <li
+                  key={h.day}
+                  className="flex justify-between border-b border-border/50 pb-2 last:border-0"
+                >
+                  <span className={h.closed ? "text-muted-foreground" : "text-foreground"}>
+                    {h.day}
+                  </span>
+                  <span
+                    className={h.closed ? "text-muted-foreground" : "font-medium text-foreground"}
+                  >
+                    {h.time}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <div className="mt-12 flex justify-center">
-          <img
-            src={logoAsset.url}
-            alt={site.name}
-            className="h-20 w-auto sm:h-24"
-            loading="lazy"
-            decoding="async"
-          />
+          <div className="w-full max-w-xl overflow-hidden rounded-3xl shadow-xl">
+            <video
+              src={contactVideo.url}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="h-[360px] w-full object-cover"
+            />
+          </div>
+
+          <div className="flex justify-center">
+            <img
+              src={logoAsset.url}
+              alt={site.name}
+              className="h-20 w-auto sm:h-24"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
       </section>
     </div>
