@@ -81,10 +81,10 @@ function Home() {
               Termin vereinbaren
             </a>
             <a
-              href="#behandlungen"
+              href="#services-preise"
               className="rounded-full border border-primary-foreground/40 px-8 py-3.5 text-center font-medium text-primary-foreground transition-colors hover:bg-primary-foreground/10"
             >
-              Behandlungen & Preise
+              Services & Preise
             </a>
           </div>
         </div>
