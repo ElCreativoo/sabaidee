@@ -65,6 +65,7 @@ export const images = {
   lounge: loungeImg.url,
   room: roomImg.url,
   reception: receptionImg.url,
+  buddha: buddhaImg.url,
 };
 
 export const gallery = [
