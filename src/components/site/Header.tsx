@@ -1,12 +1,12 @@
-import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { site } from "@/lib/site";
 
 const nav = [
-  { to: "/", label: "Start" },
-  { to: "/behandlungen", label: "Behandlungen" },
-  { to: "/ueber-uns", label: "Über uns" },
-  { to: "/kontakt", label: "Kontakt" },
+  { href: "#ueber-uns", label: "Über uns" },
+  { href: "#behandlungen", label: "Behandlungen" },
+  { href: "#preise", label: "Preise" },
+  { href: "#galerie", label: "Eindrücke" },
+  { href: "#kontakt", label: "Kontakt" },
 ] as const;
 
 export function Header() {
@@ -15,26 +15,24 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link to="/" className="flex flex-col leading-tight" onClick={() => setOpen(false)}>
+        <a href="#top" className="flex flex-col leading-tight" onClick={() => setOpen(false)}>
           <span className="font-serif text-xl tracking-wide text-primary sm:text-2xl">
             Sabai Dee
           </span>
           <span className="text-[0.68rem] uppercase tracking-[0.28em] text-muted-foreground">
             Thaimassage
           </span>
-        </Link>
+        </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {nav.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              activeOptions={{ exact: item.to === "/" }}
-              activeProps={{ className: "text-primary" }}
+            <a
+              key={item.href}
+              href={item.href}
               className="text-sm text-muted-foreground transition-colors hover:text-primary"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
           <a
             href={site.phoneHref}
@@ -66,16 +64,14 @@ export function Header() {
         <div className="border-t border-border/60 bg-background px-4 pb-5 pt-3 md:hidden">
           <div className="flex flex-col gap-3">
             {nav.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
+              <a
+                key={item.href}
+                href={item.href}
                 onClick={() => setOpen(false)}
-                activeOptions={{ exact: item.to === "/" }}
-                activeProps={{ className: "text-primary" }}
                 className="text-base text-muted-foreground"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
             <a
               href={site.phoneHref}
