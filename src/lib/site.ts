@@ -21,10 +21,18 @@ export const site = {
 };
 
 export function openWhatsApp(e: { preventDefault: () => void }) {
-  e.preventDefault();
-  const w = window.open(site.whatsapp, "_blank", "noopener,noreferrer");
-  if (!w) window.top!.location.href = site.whatsapp;
+  try {
+    const w = window.open(site.whatsapp, "_blank", "noopener,noreferrer");
+    if (w) {
+      e.preventDefault();
+      return;
+    }
+  } catch {
+    /* fall through to native link navigation */
+  }
+  // native anchor (target="_blank") handles it
 }
+
 
 export const prices = [
   { duration: "60 Minuten", price: "CHF 100.00" },
