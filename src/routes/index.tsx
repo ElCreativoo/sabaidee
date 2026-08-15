@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { gallery, hours, images, prices, site, treatments } from "@/lib/site";
-import videoAsset from "@/assets/sabaidee-video.mp4.asset.json";
+import heroVideo from "@/assets/user-hero-video.mp4.asset.json";
+import contactVideo from "@/assets/sabaidee-video.mp4.asset.json";
+
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -51,7 +53,7 @@ function Home() {
     <div>
       <section className="relative flex min-h-[78vh] items-center overflow-hidden">
         <video
-          src={videoAsset.url}
+          src={heroVideo.url}
           autoPlay
           muted
           loop
@@ -60,6 +62,7 @@ function Home() {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/25" />
+
         <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6">
           <p className="text-xs uppercase tracking-[0.35em] text-accent">Münsingen</p>
           <h1 className="mt-4 max-w-2xl font-serif text-4xl leading-tight text-primary-foreground sm:text-5xl md:text-6xl">
@@ -275,13 +278,17 @@ function Home() {
         </div>
 
         <div className="mt-12 overflow-hidden rounded-3xl shadow-xl">
-          <img
-            src={images.reception}
-            alt="Wartebereich mit Sofa und Buddha-Figur im Studio Sabai Dee"
-            loading="lazy"
+          <video
+            src={contactVideo.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
             className="h-[360px] w-full object-cover"
           />
         </div>
+
       </section>
     </div>
   );
