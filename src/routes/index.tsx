@@ -342,6 +342,9 @@ function Home() {
                 >
                   Route auf Google Maps
                 </a>
+                <p className="pt-1 text-center text-xs text-muted-foreground">
+                  WhatsApp nicht erreichbar? Nummer kopieren: {site.phone}
+                </p>
               </div>
             </div>
 
