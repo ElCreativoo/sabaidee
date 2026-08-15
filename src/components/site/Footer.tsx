@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { site } from "@/lib/site";
 
 export function Footer() {
@@ -31,22 +30,27 @@ export function Footer() {
         </div>
 
         <div className="text-sm text-primary-foreground/80">
-          <p className="mb-3 font-medium text-primary-foreground">Seiten</p>
+          <p className="mb-3 font-medium text-primary-foreground">Übersicht</p>
           <ul className="space-y-1.5">
             <li>
-              <Link to="/behandlungen" className="hover:text-accent">
-                Behandlungen & Preise
-              </Link>
-            </li>
-            <li>
-              <Link to="/ueber-uns" className="hover:text-accent">
+              <a href="#ueber-uns" className="hover:text-accent">
                 Über uns
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/kontakt" className="hover:text-accent">
+              <a href="#behandlungen" className="hover:text-accent">
+                Behandlungen
+              </a>
+            </li>
+            <li>
+              <a href="#preise" className="hover:text-accent">
+                Preise
+              </a>
+            </li>
+            <li>
+              <a href="#kontakt" className="hover:text-accent">
                 Kontakt & Öffnungszeiten
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
