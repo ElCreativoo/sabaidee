@@ -190,9 +190,9 @@ function Home() {
                   "Tiefengewebemassage",
                   "Therapeutische Massage",
                 ].map((service) => (
-                  <div key={service} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                    <span>{service}</span>
+                  <div key={service} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                    <span className="break-words">{service}</span>
                   </div>
                 ))}
               </div>
