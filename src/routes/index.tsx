@@ -51,6 +51,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: "https://sabaidee.lovable.app/og-image.png" },
     ],
     links: [{ rel: "canonical", href: "https://sabaidee.lovable.app/" }],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd) }],
   }),
   component: Home,
 });
