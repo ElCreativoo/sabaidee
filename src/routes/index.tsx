@@ -275,13 +275,10 @@ function Home() {
         </div>
 
         <div className="mt-12 overflow-hidden rounded-3xl shadow-xl">
-          <video
-            src={videoAsset.url}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
+          <img
+            src={images.reception}
+            alt="Wartebereich mit Sofa und Buddha-Figur im Studio Sabai Dee"
+            loading="lazy"
             className="h-[360px] w-full object-cover"
           />
         </div>
