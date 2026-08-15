@@ -311,62 +311,64 @@ function Home() {
           </p>
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-6">
-          <div className="w-full max-w-xl rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
-            <h3 className="font-serif text-2xl text-primary">So erreichen Sie uns</h3>
-            <address className="mt-6 space-y-1 not-italic text-muted-foreground">
-              <p className="text-foreground">{site.name}</p>
-              <p>{site.street}</p>
-              <p>{site.city}</p>
-            </address>
-            <div className="mt-6 flex flex-col gap-3">
-              <a
-                href={site.phoneHref}
-                className="rounded-full bg-primary px-6 py-3 text-center font-medium text-primary-foreground"
-              >
-                {site.phone}
-              </a>
-              <a
-                href={site.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-accent px-6 py-3 text-center font-medium text-accent-foreground"
-              >
-                WhatsApp schreiben
-              </a>
-              <a
-                href={site.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-border px-6 py-3 text-center font-medium text-foreground"
-              >
-                Route auf Google Maps
-              </a>
+        <div className="mx-auto mt-10 grid max-w-4xl gap-6">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
+              <h3 className="font-serif text-2xl text-primary">So erreichen Sie uns</h3>
+              <address className="mt-6 space-y-1 not-italic text-muted-foreground">
+                <p className="text-foreground">{site.name}</p>
+                <p>{site.street}</p>
+                <p>{site.city}</p>
+              </address>
+              <div className="mt-6 flex flex-col gap-3">
+                <a
+                  href={site.phoneHref}
+                  className="rounded-full bg-primary px-6 py-3 text-center font-medium text-primary-foreground"
+                >
+                  {site.phone}
+                </a>
+                <a
+                  href={site.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-accent px-6 py-3 text-center font-medium text-accent-foreground"
+                >
+                  WhatsApp schreiben
+                </a>
+                <a
+                  href={site.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-border px-6 py-3 text-center font-medium text-foreground"
+                >
+                  Route auf Google Maps
+                </a>
+              </div>
+            </div>
+
+            <div className="rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
+              <h3 className="font-serif text-2xl text-primary">Öffnungszeiten</h3>
+              <ul className="mt-6 space-y-2.5 text-sm">
+                {hours.map((h) => (
+                  <li
+                    key={h.day}
+                    className="flex justify-between border-b border-border/50 pb-2 last:border-0"
+                  >
+                    <span className={h.closed ? "text-muted-foreground" : "text-foreground"}>
+                      {h.day}
+                    </span>
+                    <span
+                      className={h.closed ? "text-muted-foreground" : "font-medium text-foreground"}
+                    >
+                      {h.time}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          <div className="w-full max-w-xl rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
-            <h3 className="font-serif text-2xl text-primary">Öffnungszeiten</h3>
-            <ul className="mt-6 space-y-2.5 text-sm">
-              {hours.map((h) => (
-                <li
-                  key={h.day}
-                  className="flex justify-between border-b border-border/50 pb-2 last:border-0"
-                >
-                  <span className={h.closed ? "text-muted-foreground" : "text-foreground"}>
-                    {h.day}
-                  </span>
-                  <span
-                    className={h.closed ? "text-muted-foreground" : "font-medium text-foreground"}
-                  >
-                    {h.time}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="w-full max-w-xl overflow-hidden rounded-3xl shadow-xl">
+          <div className="overflow-hidden rounded-3xl shadow-xl">
             <video
               src={contactVideo.url}
               autoPlay
