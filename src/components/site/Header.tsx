@@ -43,7 +43,7 @@ export function Header() {
           rel="noopener noreferrer"
           className="hidden rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90 md:inline-flex"
         >
-          Via WhatsApp
+          WhatsApp schreiben
         </a>
 
         <button
@@ -83,7 +83,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="mt-1 w-fit rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground"
             >
-              Via WhatsApp
+              WhatsApp schreiben
             </a>
           </div>
         </div>
