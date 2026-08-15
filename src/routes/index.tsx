@@ -43,8 +43,14 @@ export const Route = createFileRoute("/")({
         content:
           "Traditionelle Thai-Massage in ruhiger Atmosphäre – Bernstrasse 15, 3110 Münsingen.",
       },
+      { property: "og:url", content: "https://sabaidee.lovable.app/" },
+      { property: "og:image", content: "https://sabaidee.lovable.app/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Sabai Dee Thaimassage Logo" },
+      { name: "twitter:image", content: "https://sabaidee.lovable.app/og-image.png" },
     ],
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd) }],
+    links: [{ rel: "canonical", href: "https://sabaidee.lovable.app/" }],
   }),
   component: Home,
 });
