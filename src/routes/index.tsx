@@ -213,7 +213,7 @@ function Home() {
         </div>
       </section>
 
-      <section id="galerie" className="scroll-mt-24 bg-secondary py-20">
+      <section id="eindruecke" className="scroll-mt-24 bg-secondary py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center">
             <h2 className="font-serif text-3xl text-primary sm:text-4xl">Eindrücke</h2>
