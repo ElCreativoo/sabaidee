@@ -288,7 +288,7 @@ function Home() {
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
-            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl hidden md:block">
               <img
                 src={images.backMassage}
                 alt="Rückenmassage im Studio Sabai Dee"
