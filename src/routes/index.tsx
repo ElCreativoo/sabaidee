@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Phone, MessageCircle, MapPin } from "lucide-react";
 import { hours, images, prices, site, treatments, openWhatsApp } from "@/lib/site";
 import heroVideo from "@/assets/user-hero-video.mp4.asset.json";
 import contactVideo from "@/assets/sabaidee-video.mp4.asset.json";
@@ -322,30 +323,28 @@ function Home() {
               <div className="mt-6 flex flex-col gap-3">
                 <a
                   href={site.phoneHref}
-                  className="rounded-full bg-primary px-6 py-3 text-center font-medium text-primary-foreground"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground"
                 >
-                  {site.phone}
+                  <Phone className="h-4 w-4" />
+                  Anrufen
                 </a>
                 <a
                   href={site.whatsapp}
                   onClick={openWhatsApp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full bg-accent px-6 py-3 text-center font-medium text-accent-foreground"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-accent-foreground"
                 >
+                  <MessageCircle className="h-4 w-4" />
                   WhatsApp schreiben
                 </a>
                 <a
                   href={site.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-border px-6 py-3 text-center font-medium text-foreground"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 font-medium text-foreground"
                 >
+                  <MapPin className="h-4 w-4" />
                   Route auf Google Maps
                 </a>
-                <p className="pt-1 text-center text-xs text-muted-foreground">
-                  WhatsApp nicht erreichbar? Nummer kopieren: {site.phone}
-                </p>
               </div>
             </div>
 
