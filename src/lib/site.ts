@@ -15,10 +15,16 @@ export const site = {
   city: "3110 Münsingen",
   phone: "+41 79 395 62 87",
   phoneHref: "tel:+41793956287",
-  whatsapp: "https://web.whatsapp.com/send?phone=41793956287",
+  whatsapp: "https://wa.me/41793956287",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Bernstrasse+15+3110+M%C3%BCnsingen",
 };
+
+export function openWhatsApp(e: { preventDefault: () => void }) {
+  e.preventDefault();
+  const w = window.open(site.whatsapp, "_blank", "noopener,noreferrer");
+  if (!w) window.top!.location.href = site.whatsapp;
+}
 
 export const prices = [
   { duration: "60 Minuten", price: "CHF 100.00" },
