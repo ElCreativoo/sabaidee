@@ -69,6 +69,7 @@ export const images = {
 };
 
 export const gallery = [
+  { src: images.buddha, alt: "Goldene Buddha-Statue mit Kerzenlicht im Studio" },
   { src: images.entrance, alt: "Eingangsbereich mit goldener Buddha-Statue" },
   { src: images.reception, alt: "Empfangs- und Wartebereich mit Sofa" },
   { src: images.room, alt: "Behandlungsraum mit traditioneller Thai-Matte" },
