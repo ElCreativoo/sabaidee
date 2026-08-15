@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MessageCircle } from "lucide-react";
 import { site, openWhatsApp } from "@/lib/site";
 import logoAsset from "@/assets/logo.webp.asset.json";
 
