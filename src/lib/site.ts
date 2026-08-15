@@ -3,6 +3,7 @@ import entranceImg from "@/assets/image-2.png.asset.json";
 import loungeImg from "@/assets/image-3.png.asset.json";
 import roomImg from "@/assets/image-4.png.asset.json";
 import receptionImg from "@/assets/image-5.png.asset.json";
+import buddhaImg from "@/assets/buddha.jpg.asset.json";
 
 export const site = {
   name: "Sabai Dee Thaimassage",
@@ -64,9 +65,11 @@ export const images = {
   lounge: loungeImg.url,
   room: roomImg.url,
   reception: receptionImg.url,
+  buddha: buddhaImg.url,
 };
 
 export const gallery = [
+  { src: images.buddha, alt: "Goldene Buddha-Statue mit Kerzenlicht im Studio" },
   { src: images.entrance, alt: "Eingangsbereich mit goldener Buddha-Statue" },
   { src: images.reception, alt: "Empfangs- und Wartebereich mit Sofa" },
   { src: images.room, alt: "Behandlungsraum mit traditioneller Thai-Matte" },
