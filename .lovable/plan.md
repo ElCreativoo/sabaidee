@@ -31,7 +31,13 @@ Warme, ruhige Thai-Spa-Anmutung: tiefes Teal/Jade als Hauptfarbe, sanftes Gold a
 
 ## Bilder
 
-Da noch keine eigenen Fotos vorliegen, generiere ich passende, stimmige Bilder (Massageraum, Kerzen/Öle, Detailaufnahmen) sowie ein schlichtes Wortmarken-Logo „Sabai Dee". Diese lassen sich später eins zu eins durch echte Studiofotos ersetzen. Kein Hintergrundvideo – stattdessen ein ruhiges Hero-Bild.
+Die gesendeten Studiofotos werden verwendet:
+
+- Foto der Inhaberin im Behandlungsraum – als Hero-Bild auf der Startseite und im Bereich „Über uns"
+- Eingangsbereich mit Buddha-Statue, Empfang/Wartebereich mit Sofa, zweiter Behandlungsraum, Ruhebereich mit Vorhang – als Galerie „Eindrücke" auf Startseite und Über-uns-Seite
+
+Die Fotos werden über den Lovable-CDN eingebunden (keine grossen Dateien im Projekt), mit sinnvollen Alt-Texten und Lazy Loading. Ein Hero-Bild statt Video. Als Logo eine schlichte Schrift-Wortmarke „Sabai Dee Thaimassage" – ein echtes Logo kann jederzeit nachgereicht werden. Weitere Fotos lassen sich später einfach ergänzen.
+
 
 ## Technisches
 
