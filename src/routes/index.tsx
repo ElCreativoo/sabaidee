@@ -62,7 +62,7 @@ function Home() {
           preload="metadata"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/20 to-transparent" />
 
         <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6">
           <p className="text-xs uppercase tracking-[0.35em] text-accent">Münsingen</p>
