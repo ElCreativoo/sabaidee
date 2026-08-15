@@ -1,4 +1,4 @@
-import { site } from "@/lib/site";
+import { site, openWhatsApp } from "@/lib/site";
 import logoAsset from "@/assets/logo.webp.asset.json";
 
 export function Footer() {
@@ -30,7 +30,8 @@ export function Footer() {
             </a>
           </p>
           <p>
-            <a href={site.whatsapp} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+            <a href={site.whatsapp}
+                  onClick={openWhatsApp} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
               WhatsApp
             </a>
           </p>

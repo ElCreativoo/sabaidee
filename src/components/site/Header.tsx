@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { site } from "@/lib/site";
+import { site, openWhatsApp } from "@/lib/site";
 import logoAsset from "@/assets/logo.webp.asset.json";
 
 const nav = [
@@ -39,6 +39,7 @@ export function Header() {
 
         <a
           href={site.whatsapp}
+                  onClick={openWhatsApp}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90 md:inline-flex"
@@ -79,6 +80,7 @@ export function Header() {
             ))}
             <a
               href={site.whatsapp}
+                  onClick={openWhatsApp}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-1 w-fit rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground"

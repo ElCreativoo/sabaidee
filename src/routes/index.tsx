@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { hours, images, prices, site, treatments } from "@/lib/site";
+import { hours, images, prices, site, treatments, openWhatsApp } from "@/lib/site";
 import heroVideo from "@/assets/user-hero-video.mp4.asset.json";
 import contactVideo from "@/assets/sabaidee-video.mp4.asset.json";
 
@@ -328,6 +328,7 @@ function Home() {
                 </a>
                 <a
                   href={site.whatsapp}
+                  onClick={openWhatsApp}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-accent px-6 py-3 text-center font-medium text-accent-foreground"
