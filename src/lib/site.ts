@@ -20,9 +20,17 @@ export const site = {
     "https://www.google.com/maps/search/?api=1&query=Bernstrasse+15+3110+M%C3%BCnsingen",
 };
 
+export function whatsappUrl() {
+  if (typeof navigator === "undefined") return site.whatsapp;
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  return isMobile
+    ? "https://wa.me/41793956287"
+    : "https://web.whatsapp.com/send?phone=41793956287";
+}
+
 export function openWhatsApp(e: { preventDefault: () => void }) {
   try {
-    const w = window.open(site.whatsapp, "_blank", "noopener,noreferrer");
+    const w = window.open(whatsappUrl(), "_blank", "noopener,noreferrer");
     if (w) {
       e.preventDefault();
       return;
@@ -32,6 +40,7 @@ export function openWhatsApp(e: { preventDefault: () => void }) {
   }
   // native anchor (target="_blank") handles it
 }
+
 
 
 export const prices = [
