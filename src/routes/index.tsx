@@ -380,15 +380,6 @@ function Home() {
             />
           </div>
 
-          <div className="flex justify-center">
-            <img
-              src={logoAsset.url}
-              alt={site.name}
-              className="h-20 w-auto sm:h-24"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
         </div>
       </section>
     </div>
