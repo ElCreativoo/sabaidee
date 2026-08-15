@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { site } from "@/lib/site";
+import logoAsset from "@/assets/logo.webp.asset.json";
 
 const nav = [
   { href: "#ueber-uns", label: "Über uns" },
@@ -15,13 +16,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href="#top" className="flex flex-col leading-tight" onClick={() => setOpen(false)}>
-          <span className="font-serif text-xl tracking-wide text-primary sm:text-2xl">
-            Sabai Dee
-          </span>
-          <span className="text-[0.68rem] uppercase tracking-[0.28em] text-muted-foreground">
-            Thaimassage
-          </span>
+        <a href="#top" className="flex items-center" onClick={() => setOpen(false)}>
+          <img
+            src={logoAsset.url}
+            alt={site.name}
+            className="h-12 w-auto sm:h-14"
+            loading="eager"
+            decoding="async"
+          />
         </a>
 
         <nav className="hidden items-center gap-7 md:flex">
