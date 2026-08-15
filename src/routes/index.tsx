@@ -177,7 +177,7 @@ function Home() {
 
             <div className="rounded-2xl bg-card p-7 shadow-sm ring-1 ring-border/60">
               <h3 className="font-serif text-xl text-primary">Weitere Dienstleistungen</h3>
-              <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3">
+              <div className="mt-5 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2">
                 {[
                   "Ayurvedische Massage",
                   "Chinesische Massage",
