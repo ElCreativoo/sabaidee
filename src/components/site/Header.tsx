@@ -6,8 +6,7 @@ const nav = [
   { href: "#ueber-uns", label: "Über uns" },
   { href: "#services-preise", label: "Services & Preise" },
   { href: "#eindruecke", label: "Eindrücke" },
-  { href: "#oeffnungszeiten", label: "Öffnungszeiten" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "#kontakt", label: "Kontakt & Öffnungszeiten" },
 ] as const;
 
 export function Header() {

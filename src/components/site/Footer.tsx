@@ -48,13 +48,8 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="#oeffnungszeiten" className="hover:text-accent">
-                Öffnungszeiten
-              </a>
-            </li>
-            <li>
               <a href="#kontakt" className="hover:text-accent">
-                Kontakt
+                Kontakt & Öffnungszeiten
               </a>
             </li>
           </ul>
