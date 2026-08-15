@@ -25,7 +25,7 @@ export function Header() {
           />
         </a>
 
-        <nav className="hidden items-center gap-7 md:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-7 md:flex">
           {nav.map((item) => (
             <a
               key={item.href}
@@ -35,13 +35,16 @@ export function Header() {
               {item.label}
             </a>
           ))}
-          <a
-            href={site.phoneHref}
-            className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Anrufen
-          </a>
         </nav>
+
+        <a
+          href={site.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90 md:inline-flex"
+        >
+          Via WhatsApp
+        </a>
 
         <button
           type="button"
