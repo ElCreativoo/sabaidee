@@ -264,8 +264,8 @@ function Home() {
             </div>
             <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
               <img
-                src={images.candles}
-                alt="Handtücher, Kerzen und Orchidee im Studio"
+                src={images.hero}
+                alt="Inhaberin im Behandlungsraum von Sabai Dee"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -290,8 +290,8 @@ function Home() {
             </div>
             <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
               <img
-                src={images.hero}
-                alt="Inhaberin im Behandlungsraum von Sabai Dee"
+                src={images.candles}
+                alt="Handtücher, Kerzen und Orchidee im Studio"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
