@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import logoAsset from "@/assets/logo.webp.asset.json";
 
 export function Footer() {
   return (
