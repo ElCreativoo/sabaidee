@@ -5,6 +5,9 @@ import roomImg from "@/assets/image-4.png.asset.json";
 import receptionImg from "@/assets/image-5.png.asset.json";
 import buddhaImg from "@/assets/buddha.jpg.asset.json";
 import candlesImg from "@/assets/massage-candles.jpg.asset.json";
+import footMassageImg from "@/assets/foot-massage.jpg.asset.json";
+import backMassageImg from "@/assets/back-massage.jpg.asset.json";
+
 
 export const site = {
   name: "Sabai Dee Thaimassage",
@@ -68,6 +71,9 @@ export const images = {
   reception: receptionImg.url,
   buddha: buddhaImg.url,
   candles: candlesImg.url,
+  footMassage: footMassageImg.url,
+  backMassage: backMassageImg.url,
+
 };
 
 export const gallery = [
