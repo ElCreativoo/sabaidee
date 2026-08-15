@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { gallery, hours, images, prices, site, treatments } from "@/lib/site";
+import videoAsset from "@/assets/sabaidee-video.mp4.asset.json";
 
 const jsonLd = {
   "@context": "https://schema.org",
