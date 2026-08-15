@@ -177,7 +177,7 @@ function Home() {
 
             <div className="rounded-2xl bg-card p-7 shadow-sm ring-1 ring-border/60">
               <h3 className="font-serif text-xl text-primary">Weitere Dienstleistungen</h3>
-              <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3">
+              <div className="mt-5 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2">
                 {[
                   "Ayurvedische Massage",
                   "Chinesische Massage",
@@ -190,9 +190,9 @@ function Home() {
                   "Tiefengewebemassage",
                   "Therapeutische Massage",
                 ].map((service) => (
-                  <div key={service} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                    <span>{service}</span>
+                  <div key={service} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                    <span className="break-words">{service}</span>
                   </div>
                 ))}
               </div>
