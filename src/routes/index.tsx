@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { hours, images, prices, site, treatments } from "@/lib/site";
 import heroVideo from "@/assets/user-hero-video.mp4.asset.json";
 import contactVideo from "@/assets/sabaidee-video.mp4.asset.json";
+import logoAsset from "@/assets/logo.webp.asset.json";
 
 
 const jsonLd = {
@@ -337,6 +338,16 @@ function Home() {
             playsInline
             preload="metadata"
             className="h-[360px] w-full object-cover"
+          />
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <img
+            src={logoAsset.url}
+            alt={site.name}
+            className="h-20 w-auto sm:h-24"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
