@@ -38,18 +38,23 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="#behandlungen" className="hover:text-accent">
-                Behandlungen
+              <a href="#services-preise" className="hover:text-accent">
+                Services & Preise
               </a>
             </li>
             <li>
-              <a href="#preise" className="hover:text-accent">
-                Preise
+              <a href="#eindruecke" className="hover:text-accent">
+                Eindrücke
+              </a>
+            </li>
+            <li>
+              <a href="#oeffnungszeiten" className="hover:text-accent">
+                Öffnungszeiten
               </a>
             </li>
             <li>
               <a href="#kontakt" className="hover:text-accent">
-                Kontakt & Öffnungszeiten
+                Kontakt
               </a>
             </li>
           </ul>

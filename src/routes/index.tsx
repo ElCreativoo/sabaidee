@@ -81,10 +81,10 @@ function Home() {
               Termin vereinbaren
             </a>
             <a
-              href="#behandlungen"
+              href="#services-preise"
               className="rounded-full border border-primary-foreground/40 px-8 py-3.5 text-center font-medium text-primary-foreground transition-colors hover:bg-primary-foreground/10"
             >
-              Behandlungen & Preise
+              Services & Preise
             </a>
           </div>
         </div>
@@ -139,10 +139,10 @@ function Home() {
         </div>
       </section>
 
-      <section id="behandlungen" className="scroll-mt-24 bg-secondary py-20">
+      <section id="services-preise" className="scroll-mt-24 bg-secondary py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center">
-            <h2 className="font-serif text-3xl text-primary sm:text-4xl">Unsere Behandlungen</h2>
+            <h2 className="font-serif text-3xl text-primary sm:text-4xl">Services & Preise</h2>
             <div className="mx-auto mt-4 h-px w-14 bg-accent" />
             <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
               Jede Behandlung beginnt mit einem kurzen Gespräch: Wo drückt es, wie viel Druck ist
@@ -160,67 +160,60 @@ function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="preise" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-20 sm:px-6">
-        <div className="text-center">
-          <h2 className="font-serif text-3xl text-primary sm:text-4xl">Preise</h2>
-          <div className="mx-auto mt-4 h-px w-14 bg-accent" />
-        </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-border/60">
-            <div className="border-b border-border/50 px-7 py-4">
-              <h3 className="font-serif text-xl text-primary">Preise</h3>
-            </div>
-            {prices.map((p) => (
-              <div
-                key={p.duration}
-                className="flex items-center justify-between border-b border-border/50 px-7 py-5 last:border-0"
-              >
-                <span className="text-base text-foreground">{p.duration}</span>
-                <span className="font-serif text-2xl text-primary">{p.price}</span>
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-border/60">
+              <div className="border-b border-border/50 px-7 py-4">
+                <h3 className="font-serif text-xl text-primary">Preise</h3>
               </div>
-            ))}
-          </div>
-
-          <div className="rounded-2xl bg-card p-7 shadow-sm ring-1 ring-border/60">
-            <h3 className="font-serif text-xl text-primary">Weitere Dienstleistungen</h3>
-            <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3">
-              {[
-                "Ayurvedische Massage",
-                "Chinesische Massage",
-                "Entspannende Massage",
-                "Fussmassage",
-                "Ganzkörpermassage",
-                "Heilmassage",
-                "Paarmassage",
-                "Schwedische Massage",
-                "Tiefengewebemassage",
-                "Therapeutische Massage",
-              ].map((service) => (
-                <div key={service} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                  <span>{service}</span>
+              {prices.map((p) => (
+                <div
+                  key={p.duration}
+                  className="flex items-center justify-between border-b border-border/50 px-7 py-5 last:border-0"
+                >
+                  <span className="text-base text-foreground">{p.duration}</span>
+                  <span className="font-serif text-2xl text-primary">{p.price}</span>
                 </div>
               ))}
             </div>
+
+            <div className="rounded-2xl bg-card p-7 shadow-sm ring-1 ring-border/60">
+              <h3 className="font-serif text-xl text-primary">Weitere Dienstleistungen</h3>
+              <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3">
+                {[
+                  "Ayurvedische Massage",
+                  "Chinesische Massage",
+                  "Entspannende Massage",
+                  "Fussmassage",
+                  "Ganzkörpermassage",
+                  "Heilmassage",
+                  "Paarmassage",
+                  "Schwedische Massage",
+                  "Tiefengewebemassage",
+                  "Therapeutische Massage",
+                ].map((service) => (
+                  <div key={service} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                    <span>{service}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-        <p className="mt-6 text-center text-sm text-muted-foreground">
-          Preise gelten für alle Behandlungsarten. Barzahlung vor Ort.
-        </p>
-        <div className="mt-8 text-center">
-          <a
-            href={site.phoneHref}
-            className="rounded-full bg-primary px-8 py-3.5 font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Termin unter {site.phone}
-          </a>
+          <p className="mt-6 text-center text-sm text-muted-foreground">
+            Preise gelten für alle Behandlungsarten. Barzahlung vor Ort.
+          </p>
+          <div className="mt-8 text-center">
+            <a
+              href={site.phoneHref}
+              className="rounded-full bg-primary px-8 py-3.5 font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Termin unter {site.phone}
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="galerie" className="scroll-mt-24 bg-secondary py-20">
+      <section id="eindruecke" className="scroll-mt-24 py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center">
             <h2 className="font-serif text-3xl text-primary sm:text-4xl">Eindrücke</h2>
@@ -309,17 +302,46 @@ function Home() {
         </div>
       </section>
 
+      <section id="oeffnungszeiten" className="scroll-mt-24 bg-secondary py-20">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6">
+          <div className="text-center">
+            <h2 className="font-serif text-3xl text-primary sm:text-4xl">Öffnungszeiten</h2>
+            <div className="mx-auto mt-4 h-px w-14 bg-accent" />
+          </div>
+          <div className="mt-10 rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
+            <h3 className="font-serif text-2xl text-primary">Unsere Öffnungszeiten</h3>
+            <ul className="mt-6 space-y-2.5 text-sm">
+              {hours.map((h) => (
+                <li
+                  key={h.day}
+                  className="flex justify-between border-b border-border/50 pb-2 last:border-0"
+                >
+                  <span className={h.closed ? "text-muted-foreground" : "text-foreground"}>
+                    {h.day}
+                  </span>
+                  <span
+                    className={h.closed ? "text-muted-foreground" : "font-medium text-foreground"}
+                  >
+                    {h.time}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="kontakt" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-20 sm:px-6">
         <div className="text-center">
-          <h2 className="font-serif text-3xl text-primary sm:text-4xl">Kontakt & Öffnungszeiten</h2>
+          <h2 className="font-serif text-3xl text-primary sm:text-4xl">Kontakt</h2>
           <div className="mx-auto mt-4 h-px w-14 bg-accent" />
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
             Termine nach telefonischer Vereinbarung – gerne auch kurzfristig.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2">
-          <div className="rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
+        <div className="mt-10 flex justify-center">
+          <div className="w-full max-w-xl rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
             <h3 className="font-serif text-2xl text-primary">So erreichen Sie uns</h3>
             <address className="mt-6 space-y-1 not-italic text-muted-foreground">
               <p className="text-foreground">{site.name}</p>
@@ -351,27 +373,6 @@ function Home() {
               </a>
             </div>
           </div>
-
-          <div className="rounded-3xl bg-card p-8 shadow-sm ring-1 ring-border/60">
-            <h3 className="font-serif text-2xl text-primary">Öffnungszeiten</h3>
-            <ul className="mt-6 space-y-2.5 text-sm">
-              {hours.map((h) => (
-                <li
-                  key={h.day}
-                  className="flex justify-between border-b border-border/50 pb-2 last:border-0"
-                >
-                  <span className={h.closed ? "text-muted-foreground" : "text-foreground"}>
-                    {h.day}
-                  </span>
-                  <span
-                    className={h.closed ? "text-muted-foreground" : "font-medium text-foreground"}
-                  >
-                    {h.time}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         <div className="mt-12 overflow-hidden rounded-3xl shadow-xl">
@@ -395,7 +396,6 @@ function Home() {
             decoding="async"
           />
         </div>
-
       </section>
     </div>
   );

@@ -4,9 +4,9 @@ import logoAsset from "@/assets/logo.webp.asset.json";
 
 const nav = [
   { href: "#ueber-uns", label: "Über uns" },
-  { href: "#behandlungen", label: "Behandlungen" },
-  { href: "#preise", label: "Preise" },
-  { href: "#galerie", label: "Eindrücke" },
+  { href: "#services-preise", label: "Services & Preise" },
+  { href: "#eindruecke", label: "Eindrücke" },
+  { href: "#oeffnungszeiten", label: "Öffnungszeiten" },
   { href: "#kontakt", label: "Kontakt" },
 ] as const;
 
