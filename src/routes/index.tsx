@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Phone, MessageCircle, MapPin } from "lucide-react";
 import { hours, images, prices, site, treatments, openWhatsApp } from "@/lib/site";
 import heroVideo from "@/assets/user-hero-video.mp4.asset.json";
 import contactVideo from "@/assets/sabaidee-video.mp4.asset.json";
