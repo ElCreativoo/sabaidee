@@ -74,7 +74,7 @@ function Home() {
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
-              href={site.phoneHref}
+              href="#kontakt"
               className="rounded-full bg-accent px-8 py-3.5 text-center font-medium text-accent-foreground shadow-lg transition-colors hover:bg-accent/90"
             >
               Termin vereinbaren
