@@ -13,9 +13,9 @@ export const site = {
   name: "Sabai Dee Thaimassage",
   street: "Bernstrasse 15",
   city: "3110 Münsingen",
-  phone: "+41 79 395 62 87",
-  phoneHref: "tel:+41793956287",
-  whatsapp: "whatsapp://send?phone=41793956287",
+  phone: "+41 77 482 89 92",
+  phoneHref: "tel:+41774828992",
+  whatsapp: "whatsapp://send?phone=41774828992",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Bernstrasse+15+3110+M%C3%BCnsingen",
 };
