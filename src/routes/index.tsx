@@ -25,7 +25,7 @@ const jsonLd = {
       closes: "20:00",
     },
   ],
-  priceRange: "CHF 100–170",
+  priceRange: "CHF 60–170",
 };
 
 export const Route = createFileRoute("/")({
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Traditionelle Thai-Massage in Münsingen. Öl-, Hot-Stone- und Fussmassage an der Bernstrasse 15. 60 Min ab CHF 100. Termine nach Vereinbarung.",
+          "Traditionelle Thai-Massage in Münsingen. Öl-, Hot-Stone- und Fussmassage an der Bernstrasse 15. 30 Min ab CHF 60. Termine nach Vereinbarung.",
       },
       { property: "og:title", content: "Sabai Dee Thaimassage Münsingen" },
       {
@@ -162,7 +162,7 @@ function Home() {
                 <h3 className="font-serif text-xl text-primary">{t.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
                 <p className="mt-5 text-xs uppercase tracking-widest text-muted-foreground">
-                  60 · 90 · 120 Minuten
+                  30 · 60 · 90 · 120 Minuten
                 </p>
               </div>
             ))}
