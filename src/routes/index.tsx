@@ -169,9 +169,6 @@ function Home() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             <div className="overflow-hidden rounded-2xl bg-card shadow-sm ring-1 ring-border/60">
-              <div className="border-b border-border/50 px-7 py-4">
-                <h3 className="font-serif text-xl text-primary">Preise</h3>
-              </div>
               {prices.map((p) => (
                 <div
                   key={p.duration}
