@@ -25,7 +25,7 @@ const jsonLd = {
       closes: "20:00",
     },
   ],
-  priceRange: "CHF 100–170",
+  priceRange: "CHF 60–170",
 };
 
 export const Route = createFileRoute("/")({
