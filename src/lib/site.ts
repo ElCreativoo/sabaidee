@@ -67,7 +67,7 @@ export const hours = [
   { day: "Mittwoch", time: "10:00 – 20:00" },
   { day: "Donnerstag", time: "10:00 – 20:00" },
   { day: "Freitag", time: "Geschlossen", closed: true },
-  { day: "Samstag", time: "10:00 – 20:00" },
+  { day: "Samstag", time: "Geschlossen", closed: true },
   { day: "Sonntag", time: "10:00 – 20:00" },
 ];
 
