@@ -30,7 +30,7 @@ export function openWhatsApp(e: { preventDefault: () => void }) {
 export const prices = [
   { duration: "30 Minuten", price: "CHF 60.00" },
   { duration: "60 Minuten", price: "CHF 100.00" },
-  { duration: "90 Minuten", price: "CHF 130.00" },
+  { duration: "90 Minuten", price: "CHF 140.00" },
   { duration: "120 Minuten", price: "CHF 170.00" },
 ];
 
