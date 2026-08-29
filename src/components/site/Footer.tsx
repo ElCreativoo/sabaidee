@@ -1,5 +1,4 @@
-import { site, openWhatsApp } from "@/lib/site";
-import logoAsset from "@/assets/logo.webp.asset.json";
+import { site, openWhatsApp, logoSrc } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -7,7 +6,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
           <img
-            src={logoAsset.url}
+            src={logoSrc}
             alt={site.name}
             className="h-16 w-auto sm:h-20"
             loading="lazy"

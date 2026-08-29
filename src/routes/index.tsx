@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Phone, MessageCircle, MapPin } from "lucide-react";
-import { hours, images, prices, site, treatments, openWhatsApp } from "@/lib/site";
-import heroVideo from "@/assets/user-hero-video.mp4.asset.json";
-import contactVideo from "@/assets/sabaidee-video.mp4.asset.json";
+import { hours, images, prices, site, treatments, openWhatsApp, videos } from "@/lib/site";
 
 
 const jsonLd = {
@@ -61,7 +59,7 @@ function Home() {
     <div>
       <section className="relative flex min-h-[78vh] items-center overflow-hidden">
         <video
-          src={heroVideo.url}
+          src={videos.hero}
           autoPlay
           muted
           loop
@@ -376,7 +374,7 @@ function Home() {
 
           <div className="overflow-hidden rounded-3xl shadow-xl">
             <video
-              src={contactVideo.url}
+              src={videos.contact}
               autoPlay
               muted
               loop

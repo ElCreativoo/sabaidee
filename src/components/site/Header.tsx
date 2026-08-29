@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { MessageCircle } from "lucide-react";
-import { site, openWhatsApp } from "@/lib/site";
-import logoAsset from "@/assets/logo.webp.asset.json";
+import { site, openWhatsApp, logoSrc } from "@/lib/site";
 
 const nav = [
   { href: "#ueber-uns", label: "Über uns" },
@@ -18,7 +17,7 @@ export function Header() {
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <a href="#top" className="flex items-center" onClick={() => setOpen(false)}>
           <img
-            src={logoAsset.url}
+            src={logoSrc}
             alt={site.name}
             className="h-12 w-auto sm:h-14"
             loading="eager"
