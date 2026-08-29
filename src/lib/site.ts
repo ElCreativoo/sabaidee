@@ -1,12 +1,5 @@
-import heroImg from "@/assets/image.png.asset.json";
-import entranceImg from "@/assets/image-2.png.asset.json";
-import loungeImg from "@/assets/image-3.png.asset.json";
-import roomImg from "@/assets/image-4.png.asset.json";
-import receptionImg from "@/assets/image-5.png.asset.json";
-import buddhaImg from "@/assets/buddha.jpg.asset.json";
-import candlesImg from "@/assets/massage-candles.jpg.asset.json";
-import footMassageImg from "@/assets/foot-massage.jpg.asset.json";
-import backMassageImg from "@/assets/back-massage.jpg.asset.json";
+
+
 
 
 export const site = {
@@ -72,16 +65,23 @@ export const hours = [
 ];
 
 export const images = {
-  hero: heroImg.url,
-  entrance: entranceImg.url,
-  lounge: loungeImg.url,
-  room: roomImg.url,
-  reception: receptionImg.url,
-  buddha: buddhaImg.url,
-  candles: candlesImg.url,
-  footMassage: footMassageImg.url,
-  backMassage: backMassageImg.url,
+  hero: "/media/image.png",
+  entrance: "/media/image-2.png",
+  lounge: "/media/image-3.png",
+  room: "/media/image-4.png",
+  reception: "/media/image-5.png",
+  buddha: "/media/buddha.jpg",
+  candles: "/media/massage-candles.jpg",
+  footMassage: "/media/foot-massage.jpg",
+  backMassage: "/media/back-massage.jpg",
+};
 
+export const logoSrc = "/media/logo.webp";
+
+export const videos = {
+  hero: "/media/user-hero-video.mp4",
+  contact:
+    "https://sabaidee.lovable.app/__l5e/assets-v1/ca0ca96d-80ef-42cf-8c48-b3aab69a796f/sabaidee-video.mp4",
 };
 
 export const gallery = [
